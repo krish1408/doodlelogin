@@ -1,27 +1,128 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <style>
-        .main{
-margin-top: 20%;}
-        Body{ background-color:grey;
-            text-align: center;}
-    .container{color:black;} 
-    button{ background-color:aqua;:5px;
-margin-top: 10px;
-border-radius:5px;}
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title></title>
+    <img src="https://csite.nicepage.com/Images/logo-w.png" alt="">
 </head>
-<body><div class="main"></div><h1>Login</h1>
-   <form action=""><div class="container">
-    <label for="Username">Username</label> <input type="text" placeholder="Enter Username"name="Username" required> 
-<br><br>
-<form action=""><div class="container">
-    <label for="Password">Password</label> <input type="text" placeholder="Enter Password"name="Passsword" required>
-    <br>
-    <button type="submit">Submit</button>  
-</div></form></div> 
+<nav class="navbar navbar-expand-1g bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+        <div class="">
+
+            <img src="https://csite.nicepage.com/Images/logo-w.png" alt="">
+
+        </div>
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header text-black border-bottom">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Nicepage</h5>
+                <button type="button" class="btn-close btn-close white shadow-none" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        About
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="Home">
+    <div class="mobile">
+        Mobile App <br> Development
+    </div>
+    <div class="pik">
+        <div>image from freepik</div>
+    </div>
+</div>
+<div class="main_head-container">
+    <div class="first">
+        <div class="fir-1">
+            <img src="data:image/png;base64,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"
+                width="50px" height="50px">
+            <p>Strategy</p>
+        </div>
+        <div class="fir-2">
+            <img src="https://thumbs.dreamstime.com/z/vector-illustration-organization-system-strategy-concept-cog-wheels-gears-placed-circle-service-icon-business-55044585.jpg"
+                width="50px" height="50px">
+            <p>UX Design</p>
+        </div>
+    </div>
+
+    <div class="second">
+        <div class="sec-1">
+            <img src="https://cdn-icons-png.flaticon.com/128/11724/11724496.png" width="50px" height="50px">
+            <p>Development</p>
+        </div>
+        <div class="sec-2">
+            <img src="https://cdn-icons-png.flaticon.com/128/10061/10061767.png" width="50px" height="50px">
+            <p>Testing</p>
+
+        </div>
+    </div>
+</div>
+<div class="man">
+    <div class="design">
+        <h2>We create super-awesome designs</h2>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <br>fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident.</br></p>
+    </div>
+    <div class="box">
+        <div class="box-1">
+            <div class="content">
+
+                <p>Amazing design</p>
+                <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            </div>
+            <div class="tick"></div>
+        </div>
+        <div class="box-1">
+            <div class="content">
+
+                <p>Copy writing</p>
+                <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            </div>
+            <div class="tick"></div>
+        </div>
+
+    </div>
+    <div class="box">
+        <div class="box-2">
+            <div class="content">
+
+                <p>Development</p>
+                <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            </div>
+            <div class="tick"></div>
+        </div>
+
+        <div class="box-2">
+            <div class="content">
+
+                <p>24/7 Support </p>
+                <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            </div>
+            <div class="tick"></div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
