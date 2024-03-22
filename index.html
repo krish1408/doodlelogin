@@ -11,118 +11,361 @@
     <link rel="stylesheet" href="style.css" />
     <title></title>
     <img src="https://csite.nicepage.com/Images/logo-w.png" alt="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<nav class="navbar navbar-expand-1g bg-body-tertiary fixed-top">
-    <div class="container-fluid">
-        <div class="">
 
-            <img src="https://csite.nicepage.com/Images/logo-w.png" alt="">
+<body>
+    <div class="first_image1">
+        <nav class="navbar navbar-expand-1g bg-body-tertiary fixed-top ">
+            <div class="container-fluid">
+                <div class="">
 
-        </div>
-        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                    <img src="https://csite.nicepage.com/Images/logo-w.png" alt="">
 
-        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header text-black border-bottom">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Nicepage</h5>
-                <button type="button" class="btn-close btn-close white shadow-none" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
+                </div>
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header text-black border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Nicepage</h5>
+                        <button type="button" class="btn-close btn-close white shadow-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav display-flex justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                About
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        About
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">feedback</a>
-                    </li>
-                </ul>
+        </nav>
+        <div class="Home">
+
+            <div class="mobile">
+                Mobile App <br> Development
+            </div>
+            <div class="pik">
+                <div>image from freepik</div>
             </div>
         </div>
-    </div>
-</nav>
-<div class="Home">
-    <div class="mobile">
-        Mobile App <br> Development
-    </div>
-    <div class="pik">
-        <div>image from freepik</div>
-    </div>
-</div>
-<div class="main_head-container">
-    <div class="first">
-        <div class="fir-1">
-            <img src="data:image/png;base64,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"
-                width="50px" height="50px">
-            <p>Strategy</p>
-        </div>
-        <div class="fir-2">
-            <img src="https://thumbs.dreamstime.com/z/vector-illustration-organization-system-strategy-concept-cog-wheels-gears-placed-circle-service-icon-business-55044585.jpg"
-                width="50px" height="50px">
-            <p>UX Design</p>
-        </div>
-    </div>
-
-    <div class="second">
-        <div class="sec-1">
-            <img src="https://cdn-icons-png.flaticon.com/128/11724/11724496.png" width="50px" height="50px">
-            <p>Development</p>
-        </div>
-        <div class="sec-2">
-            <img src="https://cdn-icons-png.flaticon.com/128/10061/10061767.png" width="50px" height="50px">
-            <p>Testing</p>
-
-        </div>
-    </div>
-</div>
-<div class="man">
-    <div class="design">
-        <h2>We create super-awesome designs</h2>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <br>fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident.</br></p>
-    </div>
-    <div class="box">
-        <div class="box-1">
-            <div class="content">
-
-                <p>Amazing design</p>
-                <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+        <div class="main_head-container">
+            <div class="first">
+                <div class="fir-1">
+                    <img src="data:image/png;base64,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"
+                        width="50px" height="50px">
+                    <p>Strategy</p>
+                </div>
+                <div class="fir-2">
+                    <img src="https://thumbs.dreamstime.com/z/vector-illustration-organization-system-strategy-concept-cog-wheels-gears-placed-circle-service-icon-business-55044585.jpg"
+                        width="50px" height="50px">
+                    <p>UX Design</p>
+                </div>
             </div>
-            <div class="tick"></div>
-        </div>
-        <div class="box-1">
-            <div class="content">
 
-                <p>Copy writing</p>
-                <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+
+            <div class="second">
+                <div class="sec-1">
+                    <img src="https://cdn-icons-png.flaticon.com/128/11724/11724496.png" width="50px" height="50px">
+                    <p>Development</p>
+                </div>
+                <div class="sec-2">
+                    <img src="https://cdn-icons-png.flaticon.com/128/10061/10061767.png" width="50px" height="50px">
+                    <p>Testing</p>
+
+                </div>
             </div>
-            <div class="tick"></div>
         </div>
 
-    </div>
-    <div class="box">
-        <div class="box-2">
-            <div class="content">
-
-                <p>Development</p>
-                <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+        <div class="man">
+            <div class="design">
+                <h2 class="super_text">We create super-awesome designs</h2>
+                <p class="para_1">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    <br>fugiat
+                    nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident.</br>
+                </p>
             </div>
-            <div class="tick"></div>
-        </div>
+            <div class="box">
+                <div class="box-1">
+                    <div class="content">
 
-        <div class="box-2">
-            <div class="content">
+                        <p>Amazing design</p>
+                        <p>Sample text. Click to select the text box. Click again or double click to start editing the
+                            text.
+                        </p>
+                    </div>
+                    <div class="tick"></div>
+                </div>
+                <div class="box-1">
+                    <div class="content">
 
-                <p>24/7 Support </p>
-                <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                        <p>Copy writing</p>
+                        <p>Sample text. Click to select the text box. Click again or double click to start editing the
+                            text.
+                        </p>
+                    </div>
+                    <div class="tick"></div>
+                </div>
+
             </div>
-            <div class="tick"></div>
+            <div class="box">
+                <div class="box-2">
+                    <div class="content">
+
+                        <p>Development</p>
+                        <p>Sample text. Click to select the text box. Click again or double click to start editing the
+                            text.
+                        </p>
+                    </div>
+                    <div class="tick"></div>
+                </div>
+
+                <div class="box-2">
+                    <div class="content">
+
+                        <p>24/7 Support </p>
+                        <p>Sample text. Click to select the text box. Click again or double click to start editing the
+                            text.
+                        </p>
+                    </div>
+                    <div class="tick"></div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+        <div class="section">
+            <div class="text">
+                <h3> Why choose UX studio as your app design partner?</h3>
+                <div class="textAlign">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                </div>
+                <div class="align">
+                    <p>Image from <u>freepik</u></p>
+
+                </div>
+
+                <button class="button_design" [ngClass]="">learn more</button>
+            </div>
+
+            <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/87ada4cdaa5f58a2aaf45448/vvv.jpg" />
+
+        </div>
+        <div class="About-us">
+            <div class="container">
+                <div class="content-section">
+                    <div class="title2">
+                        <h5 class="title_text">ABOUT US</h5>
+                    </div>
+                    <div class="build_box">
+                        <div class="build_align">Build your dream website today</div>
+                        <p class="arcticle_text">Article evident arrived express highest men did boy. Mistress sensible
+                            entirely
+                            am so. Quick can
+                            manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others
+                            theirs
+                            passed but wishes.You day real less till dear read.</p>
+                        <li class="mail_text">Support via E-mail and Phone</li>
+                        <li class="multi_text">Multi-Language Support</li>
+                        <button class="button_read" [ngClass]="">READ MORE</button>
+                        <div class="freepik">
+                            <p class="imagepik_text">Image from <u>freepik</u></p>
+
+                        </div>
+                        <div class="mobilelogo">
+                            <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/d0dcf45463e35f0798cb1cc9/phone-2-min.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-1">
+                <div class="container-2">
+                    <img
+                        src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBiwVWarSYihLbrsqRif4FAsjBvk2zws7cmQU_kOsr7O-bE7yQ">
+
+                    <h2 class="for_textalign">Let's Get Started</h2>
+                    <h6 class="mind_text">Have a project or partnership in mind? <br>Contact us today for a free
+                        consultation.
+                    </h6>
+                    <button class="button_contact" [ngClass]="">Contact us</button>
+                </div>
+            </div>
+
+            <div class="circle">
+                <div class="c2"></div>
+            </div>
+            <div class="container-3">
+                <div class="left"></div>
+                <div class="right">
+                    <div class="content_aboutus">
+                        <h1>ABOUT US</h1>
+                        <p>Elit ut aliquam purus sit amet luctus venenatis. Ridiculus mus mauris vitae ultricies leo
+                            integer
+                            malesuada. Massa enim nec dui nunc mattis enim. Sagittis vitae et leo duis ut. Lacus
+                            suspendisse
+                            faucibus interdum.</p>
+                        <p class="pik_text">Image from <u>freepik</u></p>
+                        <button class="button_learn" [ngClass]="">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="final_image">
+                <img src="//images01.nicepage.com/c461c07a441a5d220e8feb1a/0080ee0b3a475140bf3af64c/ret-min.jpg" alt="">
+            </div>
+
+
+            <div class="people">
+                <h1 class="help_1">How We Help People</h1>
+                <h5 class="comments">With serious savings, a seamless online application, and unique <br>community
+                    benefits,
+                    our
+                    members have a lot to say about our loans</h5>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="data:image/png;base64,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"
+                            alt="">
+                        <p class="pack_1">Article evident arrived express highest men did boy. Mistress sensible
+                            entirely am
+                            so.
+                            Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing.
+                        </p>
+                        <div class="pic_1">
+                            <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/52d82c5900df5c6e8686dcd1/44d5d282-18f7-4295-9493-b2865af9bf3d.jpg"
+                                alt="">
+                            <p class="name_1">May Smith</p>
+                        </div>
+
+                    </div>
+                    <div class=" card">
+                        <img src="data:image/png;base64,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"
+                            alt="">
+                        <p class="pack_2">Article evident arrived express highest men did boy. Mistress sensible
+                            entirely am
+                            so.
+                            Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing.
+                        </p>
+                        <div class="pic_1 ">
+                            <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/d6c11a21917b552d9ffb48bc/44720b5f-d674-4089-b6ec-12c44ea13947.jpg"
+                                alt="">
+                            <p class="name_2">Bob Perry</p>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="data:image/png;base64,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"
+                            alt="">
+                        <p class="pack_3">Article evident arrived express highest men did boy. Mistress sensible
+                            entirely am
+                            so.
+                            Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing.
+                        </p>
+                        <div class="pic_1">
+                            <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/63e47b4c0f7858f381525540/dgrt-min.jpg"
+                                alt="">
+                            <p class="name_3">Marry Hudson</p>
+                        </div>
+                        <p class="Last_text">Image from <u>freepik</u></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="container_1">
+                    <div class="group_image">
+                        <img src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/95eb76da981750d49adc2203/sdag-min.jpg"
+                            alt="">
+                        <div class="teams_text">
+                            <h1 class="head_text">Effective Teams</h1>
+                            <p class="para_text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu
+                                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia
+                                deserunt mollit anim id est laborum.</p>
+                            <p class="Las_text">Image from <u>freepik</u></p>
+                            <button class="final_button" [ngClass]="">Learn More</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head1_container">
+                <div class="first_cont1">
+                    <div class="first_text">
+                        <img src="data:image/png;base64,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"
+                            width="50px" height="50px">
+                        <h4 class="location_text">OUR MAIN OFFICE</h4>
+                        <p class="location_para">SoHo 94 Broadway St New York, NY 1001</p>
+                    </div>
+                    <div class="second_text">
+                        <img src="data:image/png;base64,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"
+                            width="50px" height="50px">
+                        <h4 class="location_text">PHONE NUMBER</h4>
+                        <p class="location_para">234-9876-5400 888-0123-4567 (Toll Free)</p>
+                    </div>
+                    <div class="second_cont2">
+                        <div class="third_text">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNDoEVUv0yU8NLkafiwHYFHJIli-IGF0PrBQ&usqp=CAU"
+                                width="50px" height="50px">
+                            <h4 class="location_text">FAX</h4>
+                            <p class="location_para">1-234-567-8900</p>
+                        </div>
+                        <div class="fourth_text">
+                            <img src="data:image/png;base64,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"
+                                width="50px" height="50px">
+                            <h4 class="location_text">EMAIL</h4>
+                            <p class="location_para"><U>hello@theme.com</U></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="blue_container">
+                <div class="social_text">
+                    <div class="social_text_align">
+                        <h2 class="touch_text">Get in touch</h2>
+                        <h6 class="touch_para">We can ensure reliability, low cost fares and most important,with safety
+                            and
+                            comfort in mind.</h6>
+                        <p class="touch_para2">Etiam sit amet convallis erat – class aptent taciti sociosqu ad litora
+                            torquent per conubia! Maecenas gravida lacus. Lorem etiam sit amet convallis erat. </p>
+                    </div>
+                    <div class="contact_info">
+                        <span>Email</span>
+                        <input type="Email" placeholder="Enter valid email address" class="contact_inputs" required>
+                        <span>Name</span>
+                        <input type="text" name="name" placeholder="Enter your name" class="contact_inputs" required>
+                        <span>Message</span>
+                        <textarea name="message" placeholder=" Enter your message" class="contact_inputs"
+                            required></textarea>
+                            <button class="last_button" [ngClass]="">Submit</button>
+                    </div>
+                    <div class="brands_symbol">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 </body>
+
 </html>
